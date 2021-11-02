@@ -8,6 +8,8 @@
 </head>
 <body ng-app>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+
     <input type="text" ng-model="query"/>
     <select ng-model="order">
         <option value="username">Ordre par nom</option>
@@ -26,6 +28,8 @@
     </div>
 
     </div>
+    
+    
     <script>
         function CommentsCtrl($scope){
             $scope.comments = [
@@ -50,12 +54,11 @@
     "username": "Huber Roman",
     "content": "Consequat duis nostrud labore sint mollit fugiat ullamco consectetur nostrud. Excepteur excepteur culpa sint adipisicing eiusmod labore."
   }
-]
+];
     }
     </script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
 
     
 </body>
