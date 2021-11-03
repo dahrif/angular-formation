@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildAComponent implements OnInit {
 
+  color= 'white';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changeColor(input){
+    this.color = input.value
+    input.value = "";
   }
 
 }

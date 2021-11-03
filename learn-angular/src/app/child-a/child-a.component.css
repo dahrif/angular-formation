@@ -2,3 +2,9 @@ p{
     color: blueviolet;
     font-size: 1.5rem;
 }
+
+div{
+    width: 80%;
+    height: 100px;
+    padding: 30px 70px;
+}

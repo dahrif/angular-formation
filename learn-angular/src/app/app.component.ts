@@ -9,4 +9,8 @@ export class AppComponent {
   title = 'Dahri Fatima';
   bgcolor = 'yellow';
   show = false;
+
+  changeStatus(){
+    this.show = !this.show;
+  }
 }
