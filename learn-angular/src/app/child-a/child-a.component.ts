@@ -14,9 +14,14 @@ export class ChildAComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeColor(input){
+  changeColor(input: { value: string; }){
     this.color = input.value
     input.value = "";
+  }
+
+  processReq(message: any){
+    console.log(message);
+    alert(message);
   }
 
 }

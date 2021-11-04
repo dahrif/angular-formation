@@ -1,5 +1,6 @@
-<div class="border border-dark border-2 m-3" [style.background-color]='color'> Color</div>
-<!-- <input #inputColor (change)="changeColor(inputColor)" type="text" class="form-control"> -->
+<app-child-b (sendRequestToData)="processReq($event)" [childBProperty]="color" (sendSonData)="processSonreq($event)"></app-child-b>
+
+<div class="border border-dark border-2 m-3" [style.background-color]='color' > Color</div>
 
 
 <input type="text" [(ngModel)]='color' class="form-control">
